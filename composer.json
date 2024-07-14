@@ -12,5 +12,7 @@
             "name": "Maxim Latnikov"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/collections": "^11.15"
+    }
 }

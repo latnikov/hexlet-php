@@ -1,0 +1,16 @@
+{
+    "name": "latnikov/hexlet-php",
+    "description": "my first environment project on php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Latnikov\\HexletPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maxim Latnikov"
+        }
+    ],
+    "require": {}
+}

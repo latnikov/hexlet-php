@@ -3,9 +3,13 @@
     "description": "my first environment project on php",
     "type": "project",
     "autoload": {
+        "files": [
+            "src/Runner.php"
+        ],
         "psr-4": {
             "Latnikov\\HexletPhp\\": "src/"
         }
+        
     },
     "authors": [
         {
@@ -14,5 +18,15 @@
     ],
     "require": {
         "illuminate/collections": "^11.15"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "wp-coding-standards/wpcs": "*"
+    },
+    "scripts": {
+        "lint": [
+            "phpcs --standard=WordPress --extensions=php -p src/"
+        ],
+        "fix": "phpcbf --standard=WordPress --extensions=php src/"
     }
 }

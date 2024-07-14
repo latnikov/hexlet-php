@@ -2,11 +2,12 @@
 
 namespace Hexlet\Php\Runner;
 
-function run()
-{
-    $collection = collect(['taylor', 'abigail', 'ivan'])->map(function ($name) {
-        return strtoupper($name);
-    });
+function run() {
+	$collection = collect( array( 'taylor', 'abigail', 'ivan' ) )->map(
+		function ( $name ) {
+			return strtoupper( $name );
+		}
+	);
 
-    return $collection;
+	return $collection;
 }
